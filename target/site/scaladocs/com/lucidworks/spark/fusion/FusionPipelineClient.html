@@ -1,0 +1,876 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>FusionPipelineClient - spark-solr 3.0.1-SNAPSHOT API - com.lucidworks.spark.fusion.FusionPipelineClient</title>
+          <meta name="description" content="FusionPipelineClient - spark - solr 3.0.1 - SNAPSHOT API - com.lucidworks.spark.fusion.FusionPipelineClient" />
+          <meta name="keywords" content="FusionPipelineClient spark solr 3.0.1 SNAPSHOT API com.lucidworks.spark.fusion.FusionPipelineClient" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'com.lucidworks.spark.fusion.FusionPipelineClient';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img alt="Class" src="../../../../lib/class_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.lucidworks">lucidworks</a>.<a href="../package.html" class="extype" name="com.lucidworks.spark">spark</a>.<a href="package.html" class="extype" name="com.lucidworks.spark.fusion">fusion</a></p>
+        <h1>FusionPipelineClient</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="com.lucidworks.spark.fusion">package fusion</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">FusionPipelineClient</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="com.lucidworks.spark.fusion.FusionPipelineClient"><span>FusionPipelineClient</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="com.lucidworks.spark.fusion.FusionPipelineClient#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(fusionHostAndPortList:String,fusionUser:String,fusionPass:String,fusionRealm:String):com.lucidworks.spark.fusion.FusionPipelineClient"></a>
+      <a id="&lt;init&gt;:FusionPipelineClient"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">FusionPipelineClient</span><span class="params">(<span name="fusionHostAndPortList">fusionHostAndPortList: <span class="extype" name="java.lang.String">String</span></span>, <span name="fusionUser">fusionUser: <span class="extype" name="java.lang.String">String</span></span>, <span name="fusionPass">fusionPass: <span class="extype" name="java.lang.String">String</span></span>, <span name="fusionRealm">fusionRealm: <span class="extype" name="java.lang.String">String</span></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@&lt;init&gt;(fusionHostAndPortList:String,fusionUser:String,fusionPass:String,fusionRealm:String):com.lucidworks.spark.fusion.FusionPipelineClient" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(fusionHostAndPortList:String):com.lucidworks.spark.fusion.FusionPipelineClient"></a>
+      <a id="&lt;init&gt;:FusionPipelineClient"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">FusionPipelineClient</span><span class="params">(<span name="fusionHostAndPortList">fusionHostAndPortList: <span class="extype" name="java.lang.String">String</span></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@&lt;init&gt;(fusionHostAndPortList:String):com.lucidworks.spark.fusion.FusionPipelineClient" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@##():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#clearCookieForHost" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clearCookieForHost(sessionHost:String):Unit"></a>
+      <a id="clearCookieForHost(String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearCookieForHost</span><span class="params">(<span name="sessionHost">sessionHost: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@clearCookieForHost(sessionHost:String):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="package.html" class="extype" name="com.lucidworks.spark.fusion">com.lucidworks.spark.fusion</a>] </dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#establishSession" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="establishSession(sessionKey:String,user:String,password:String,realm:String):com.lucidworks.spark.fusion.FusionPipelineClient.FusionSession"></a>
+      <a id="establishSession(String,String,String,String):FusionSession"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">establishSession</span><span class="params">(<span name="sessionKey">sessionKey: <span class="extype" name="java.lang.String">String</span></span>, <span name="user">user: <span class="extype" name="java.lang.String">String</span></span>, <span name="password">password: <span class="extype" name="java.lang.String">String</span></span>, <span name="realm">realm: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="com.lucidworks.spark.fusion.FusionPipelineClient.FusionSession">FusionSession</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@establishSession(sessionKey:String,user:String,password:String,realm:String):com.lucidworks.spark.fusion.FusionPipelineClient.FusionSession" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="package.html" class="extype" name="com.lucidworks.spark.fusion">com.lucidworks.spark.fusion</a>] </dd></dl></div>
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#establishSessions" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="establishSessions(hostAndPortList:java.util.List[String],user:String,password:String,realm:String):java.util.Map[String,com.lucidworks.spark.fusion.FusionPipelineClient.FusionSession]"></a>
+      <a id="establishSessions(List[String],String,String,String):Map[String,FusionSession]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">establishSessions</span><span class="params">(<span name="hostAndPortList">hostAndPortList: <span class="extype" name="java.util.List">List</span>[<span class="extype" name="java.lang.String">String</span>]</span>, <span name="user">user: <span class="extype" name="java.lang.String">String</span></span>, <span name="password">password: <span class="extype" name="java.lang.String">String</span></span>, <span name="realm">realm: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="java.util.Map">Map</span>[<span class="extype" name="java.lang.String">String</span>, <span class="extype" name="com.lucidworks.spark.fusion.FusionPipelineClient.FusionSession">FusionSession</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@establishSessions(hostAndPortList:java.util.List[String],user:String,password:String,realm:String):java.util.Map[String,com.lucidworks.spark.fusion.FusionPipelineClient.FusionSession]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="package.html" class="extype" name="com.lucidworks.spark.fusion">com.lucidworks.spark.fusion</a>] </dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#getAvailableServer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getAvailableServer():String"></a>
+      <a id="getAvailableServer():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getAvailableServer</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@getAvailableServer():String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#getAvailableServers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getAvailableServers():java.util.ArrayList[String]"></a>
+      <a id="getAvailableServers():ArrayList[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getAvailableServers</span><span class="params">()</span><span class="result">: <span class="extype" name="java.util.ArrayList">ArrayList</span>[<span class="extype" name="java.lang.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@getAvailableServers():java.util.ArrayList[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#getFusionRealm" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getFusionRealm():String"></a>
+      <a id="getFusionRealm():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getFusionRealm</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@getFusionRealm():String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#getFusionUser" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getFusionUser():String"></a>
+      <a id="getFusionUser():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getFusionUser</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@getFusionUser():String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#getHttpClient" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getHttpClient():org.apache.http.client.HttpClient"></a>
+      <a id="getHttpClient():HttpClient"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getHttpClient</span><span class="params">()</span><span class="result">: <span class="extype" name="org.apache.http.client.HttpClient">HttpClient</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@getHttpClient():org.apache.http.client.HttpClient" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#getLbServer" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getLbServer(list:java.util.List[String]):String"></a>
+      <a id="getLbServer(List[String]):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getLbServer</span><span class="params">(<span name="list">list: <span class="extype" name="java.util.List">List</span>[<span class="extype" name="java.lang.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@getLbServer(list:java.util.List[String]):String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="package.html" class="extype" name="com.lucidworks.spark.fusion">com.lucidworks.spark.fusion</a>] </dd></dl></div>
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#getMeterByHost" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getMeterByHost(meterName:String,host:String):com.codahale.metrics.Meter"></a>
+      <a id="getMeterByHost(String,String):Meter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getMeterByHost</span><span class="params">(<span name="meterName">meterName: <span class="extype" name="java.lang.String">String</span></span>, <span name="host">host: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="com.codahale.metrics.Meter">Meter</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@getMeterByHost(meterName:String,host:String):com.codahale.metrics.Meter" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="package.html" class="extype" name="com.lucidworks.spark.fusion">com.lucidworks.spark.fusion</a>] </dd></dl></div>
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#getSession" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getSession(url:String,requestId:Int):com.lucidworks.spark.fusion.FusionPipelineClient.FusionSession"></a>
+      <a id="getSession(String,Int):FusionSession"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getSession</span><span class="params">(<span name="url">url: <span class="extype" name="java.lang.String">String</span></span>, <span name="requestId">requestId: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="com.lucidworks.spark.fusion.FusionPipelineClient.FusionSession">FusionSession</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@getSession(url:String,requestId:Int):com.lucidworks.spark.fusion.FusionPipelineClient.FusionSession" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="package.html" class="extype" name="com.lucidworks.spark.fusion">com.lucidworks.spark.fusion</a>] </dd></dl></div>
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#getSessionKey" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getSessionKey(url:String):String"></a>
+      <a id="getSessionKey(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getSessionKey</span><span class="params">(<span name="url">url: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@getSessionKey(url:String):String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="package.html" class="extype" name="com.lucidworks.spark.fusion">com.lucidworks.spark.fusion</a>] </dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#postBatchToPipeline" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="postBatchToPipeline(pipelinePath:String,docs:java.util.List[_]):Unit"></a>
+      <a id="postBatchToPipeline(String,List[_]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">postBatchToPipeline</span><span class="params">(<span name="pipelinePath">pipelinePath: <span class="extype" name="java.lang.String">String</span></span>, <span name="docs">docs: <span class="extype" name="java.util.List">List</span>[_]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@postBatchToPipeline(pipelinePath:String,docs:java.util.List[_]):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#postJsonToPipeline" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="postJsonToPipeline(hostAndPort:String,pipelinePath:String,docs:java.util.List,requestId:Int):Unit"></a>
+      <a id="postJsonToPipeline(String,String,List,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">postJsonToPipeline</span><span class="params">(<span name="hostAndPort">hostAndPort: <span class="extype" name="java.lang.String">String</span></span>, <span name="pipelinePath">pipelinePath: <span class="extype" name="java.lang.String">String</span></span>, <span name="docs">docs: <span class="extype" name="java.util.List">List</span></span>, <span name="requestId">requestId: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@postJsonToPipeline(hostAndPort:String,pipelinePath:String,docs:java.util.List,requestId:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#postJsonToPipelineWithRetry" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="postJsonToPipelineWithRetry(hostAndPort:String,pipelinePath:String,docs:java.util.List,mutable:java.util.ArrayList[String],lastExc:Exception,requestId:Int):Exception"></a>
+      <a id="postJsonToPipelineWithRetry(String,String,List,ArrayList[String],Exception,Int):Exception"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">postJsonToPipelineWithRetry</span><span class="params">(<span name="hostAndPort">hostAndPort: <span class="extype" name="java.lang.String">String</span></span>, <span name="pipelinePath">pipelinePath: <span class="extype" name="java.lang.String">String</span></span>, <span name="docs">docs: <span class="extype" name="java.util.List">List</span></span>, <span name="mutable">mutable: <span class="extype" name="java.util.ArrayList">ArrayList</span>[<span class="extype" name="java.lang.String">String</span>]</span>, <span name="lastExc">lastExc: <span class="extype" name="java.lang.Exception">Exception</span></span>, <span name="requestId">requestId: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="java.lang.Exception">Exception</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@postJsonToPipelineWithRetry(hostAndPort:String,pipelinePath:String,docs:java.util.List,mutable:java.util.ArrayList[String],lastExc:Exception,requestId:Int):Exception" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="package.html" class="extype" name="com.lucidworks.spark.fusion">com.lucidworks.spark.fusion</a>] </dd></dl></div>
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#raiseFusionServerException" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="raiseFusionServerException(endpoint:String,entity:org.apache.http.HttpEntity,statusCode:Int,response:org.apache.http.HttpResponse,requestId:Int):Unit"></a>
+      <a id="raiseFusionServerException(String,HttpEntity,Int,HttpResponse,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">raiseFusionServerException</span><span class="params">(<span name="endpoint">endpoint: <span class="extype" name="java.lang.String">String</span></span>, <span name="entity">entity: <span class="extype" name="org.apache.http.HttpEntity">HttpEntity</span></span>, <span name="statusCode">statusCode: <span class="extype" name="scala.Int">Int</span></span>, <span name="response">response: <span class="extype" name="org.apache.http.HttpResponse">HttpResponse</span></span>, <span name="requestId">requestId: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@raiseFusionServerException(endpoint:String,entity:org.apache.http.HttpEntity,statusCode:Int,response:org.apache.http.HttpResponse,requestId:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="package.html" class="extype" name="com.lucidworks.spark.fusion">com.lucidworks.spark.fusion</a>] </dd></dl></div>
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#resetSession" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="resetSession(sessionKey:String):com.lucidworks.spark.fusion.FusionPipelineClient.FusionSession"></a>
+      <a id="resetSession(String):FusionSession"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">resetSession</span><span class="params">(<span name="sessionKey">sessionKey: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="com.lucidworks.spark.fusion.FusionPipelineClient.FusionSession">FusionSession</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@resetSession(sessionKey:String):com.lucidworks.spark.fusion.FusionPipelineClient.FusionSession" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="package.html" class="extype" name="com.lucidworks.spark.fusion">com.lucidworks.spark.fusion</a>] </dd></dl></div>
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#sendRequestToFusion" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="sendRequestToFusion(httpRequest:org.apache.http.client.methods.HttpUriRequest,retry:Boolean):org.apache.http.HttpEntity"></a>
+      <a id="sendRequestToFusion(HttpUriRequest,Boolean):HttpEntity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sendRequestToFusion</span><span class="params">(<span name="httpRequest">httpRequest: <span class="extype" name="org.apache.http.client.methods.HttpUriRequest">HttpUriRequest</span></span>, <span name="retry">retry: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="org.apache.http.HttpEntity">HttpEntity</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@sendRequestToFusion(httpRequest:org.apache.http.client.methods.HttpUriRequest,retry:Boolean):org.apache.http.HttpEntity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#sendRequestToFusion" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="sendRequestToFusion(httpRequest:org.apache.http.client.methods.HttpUriRequest):org.apache.http.HttpEntity"></a>
+      <a id="sendRequestToFusion(HttpUriRequest):HttpEntity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sendRequestToFusion</span><span class="params">(<span name="httpRequest">httpRequest: <span class="extype" name="org.apache.http.client.methods.HttpUriRequest">HttpUriRequest</span></span>)</span><span class="result">: <span class="extype" name="org.apache.http.HttpEntity">HttpEntity</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@sendRequestToFusion(httpRequest:org.apache.http.client.methods.HttpUriRequest):org.apache.http.HttpEntity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#setMetricsRegistry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="setMetricsRegistry(metrics:com.codahale.metrics.MetricRegistry):Unit"></a>
+      <a id="setMetricsRegistry(MetricRegistry):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setMetricsRegistry</span><span class="params">(<span name="metrics">metrics: <span class="extype" name="com.codahale.metrics.MetricRegistry">MetricRegistry</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@setMetricsRegistry(metrics:com.codahale.metrics.MetricRegistry):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.fusion.FusionPipelineClient#shutdown" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="shutdown():Unit"></a>
+      <a id="shutdown():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">shutdown</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@shutdown():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@toString():String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.fusion.FusionPipelineClient@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

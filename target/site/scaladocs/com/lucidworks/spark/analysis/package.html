@@ -1,0 +1,155 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>analysis - spark-solr 3.0.1-SNAPSHOT API - com.lucidworks.spark.analysis</title>
+          <meta name="description" content="analysis - spark - solr 3.0.1 - SNAPSHOT API - com.lucidworks.spark.analysis" />
+          <meta name="keywords" content="analysis spark solr 3.0.1 SNAPSHOT API com.lucidworks.spark.analysis" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'com.lucidworks.spark.analysis.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.lucidworks">lucidworks</a>.<a href="../package.html" class="extype" name="com.lucidworks.spark">spark</a></p>
+        <h1>analysis</h1><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.analysis.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">analysis</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.lucidworks.spark.analysis.LuceneTextAnalyzer" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LuceneTextAnalyzerextendsSerializable"></a>
+      <a id="LuceneTextAnalyzer:LuceneTextAnalyzer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="LuceneTextAnalyzer.html"><span class="name">LuceneTextAnalyzer</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.analysis.package@LuceneTextAnalyzerextendsSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This class allows simple access to custom Lucene text processing pipelines, a.k.a.</p><div class="fullcomment"><div class="comment cmt"><p>This class allows simple access to custom Lucene text processing pipelines, a.k.a. text analyzers,
+which are specified via a JSON schema that hosts named analyzer specifications and mappings from
+field name(s) to analyzer(s).</p><p>Here's an example schema with descriptions inline as comments:</p><pre>{
+  <span class="lit">"defaultLuceneMatchVersion"</span>: <span class="lit">"5.0.0"</span> <span class="cmt">// Optional.  Supplied to analysis components</span>
+                                        <span class="cmt">//     that don't explicitly specify "luceneMatchVersion".</span>
+  <span class="lit">"analyzers"</span>: [              <span class="cmt">// Optional.  If not included, all field mappings must be</span>
+    {                         <span class="cmt">//     to fully qualified class names of Lucene Analyzer subclasses.</span>
+      <span class="lit">"name"</span>: <span class="lit">"html"</span>,         <span class="cmt">// Required.  Mappings in the "fields" array below refer to this name.</span>
+      <span class="lit">"charFilters"</span>:[{        <span class="cmt">// Optional.</span>
+        <span class="lit">"type"</span>: <span class="lit">"htmlstrip"</span>   <span class="cmt">// Required. "htmlstrip" is the SPI name for HTMLStripCharFilter</span>
+      }],
+      <span class="lit">"tokenizer"</span>: {          <span class="cmt">// Required.  Only one allowed.</span>
+        <span class="lit">"type"</span>: <span class="lit">"standard"</span>    <span class="cmt">// Required. "standard" is the SPI name for StandardTokenizer</span>
+      },
+      <span class="lit">"filters"</span>: [{           <span class="cmt">// Optional.</span>
+          <span class="lit">"type"</span>: <span class="lit">"stop"</span>,     <span class="cmt">// Required.  "stop" is the SPI name for StopFilter</span>
+          <span class="lit">"ignoreCase"</span>: <span class="lit">"true"</span>,  <span class="cmt">// Component-specific params</span>
+          <span class="lit">"format"</span>: <span class="lit">"snowball"</span>,
+          <span class="lit">"words"</span>: <span class="lit">"org/apache/lucene/analysis/snowball/english_stop.txt"</span>
+        }, {
+          <span class="lit">"type"</span>: <span class="lit">"lowercase"</span> <span class="cmt">// Required. "lowercase" is the SPI name for LowerCaseFilter</span>
+      }]
+    },
+    { <span class="lit">"name"</span>: <span class="lit">"stdtok"</span>, <span class="lit">"tokenizer"</span>: { <span class="lit">"type"</span>: <span class="lit">"standard"</span> } }
+  ],
+  <span class="lit">"fields"</span>: [{                <span class="cmt">// Required.  To lookup an analyzer for a field, first the "name"</span>
+                              <span class="cmt">//     mappings are consulted, and then the "regex" mappings are</span>
+                              <span class="cmt">//     tested, in the order specified.</span>
+      <span class="lit">"name"</span>: <span class="lit">"keywords"</span>,     <span class="cmt">// Either "name" or "regex" is required.  "name" matches the field name exactly.</span>
+      <span class="lit">"analyzer"</span>: <span class="lit">"org.apache.lucene.analysis.core.KeywordAnalyzer"</span> <span class="cmt">// FQCN of an Analyzer subclass</span>
+    }, {
+      <span class="lit">"regex"</span>: <span class="lit">".*html.*"</span>     <span class="cmt">// Either "name" or "regex" is required.  "regex" must match the whole field name.</span>
+      <span class="lit">"analyzer"</span>: <span class="lit">"html"</span>      <span class="cmt">// Reference to the named analyzer specified in the "analyzers" section.</span>
+    }, {
+      <span class="lit">"regex"</span>: <span class="lit">".+"</span>,          <span class="cmt">// Either "name" or "regex" is required.  "regex" must match the whole field name.</span>
+      <span class="lit">"analyzer"</span>: <span class="lit">"stdtok"</span>    <span class="cmt">// Reference to the named analyzer specified in the "analyzers" section.</span>
+  }]
+}</pre></div></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

@@ -1,0 +1,842 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>SolrSupport - spark-solr 3.0.1-SNAPSHOT API - com.lucidworks.spark.util.SolrSupport</title>
+          <meta name="description" content="SolrSupport - spark - solr 3.0.1 - SNAPSHOT API - com.lucidworks.spark.util.SolrSupport" />
+          <meta name="keywords" content="SolrSupport spark solr 3.0.1 SNAPSHOT API com.lucidworks.spark.util.SolrSupport" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'com.lucidworks.spark.util.SolrSupport$';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Object" src="../../../../lib/object_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.lucidworks">lucidworks</a>.<a href="../package.html" class="extype" name="com.lucidworks.spark">spark</a>.<a href="package.html" class="extype" name="com.lucidworks.spark.util">util</a></p>
+        <h1>SolrSupport</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="com.lucidworks.spark.util">package util</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SolrSupport</span><span class="result"> extends <span class="extype" name="com.typesafe.scalalogging.LazyLogging">LazyLogging</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>TODO: Use Solr schema API to index field names
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="com.typesafe.scalalogging.LazyLogging">LazyLogging</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="com.lucidworks.spark.util.SolrSupport"><span>SolrSupport</span></li><li class="in" name="com.typesafe.scalalogging.LazyLogging"><span>LazyLogging</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@##():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.lucidworks.spark.util.SolrSupport#addField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addField(doc:org.apache.solr.common.SolrInputDocument,fieldName:String,value:Object,classType:Class[_],dynamicFieldSuffix:Option[String]):Unit"></a>
+      <a id="addField(SolrInputDocument,String,AnyRef,Class[_],Option[String]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addField</span><span class="params">(<span name="doc">doc: <span class="extype" name="org.apache.solr.common.SolrInputDocument">SolrInputDocument</span></span>, <span name="fieldName">fieldName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <span class="extype" name="scala.AnyRef">AnyRef</span></span>, <span name="classType">classType: <span class="extype" name="scala.Predef.Class">Class</span>[_]</span>, <span name="dynamicFieldSuffix">dynamicFieldSuffix: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@addField(doc:org.apache.solr.common.SolrInputDocument,fieldName:String,value:Object,classType:Class[_],dynamicFieldSuffix:Option[String]):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.lucidworks.spark.util.SolrSupport#autoMapToSolrInputDoc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="autoMapToSolrInputDoc(idFieldName:String,docId:String,obj:Object,dynamicFieldOverrides:Map[String,String]):org.apache.solr.common.SolrInputDocument"></a>
+      <a id="autoMapToSolrInputDoc(String,String,AnyRef,Map[String,String]):SolrInputDocument"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">autoMapToSolrInputDoc</span><span class="params">(<span name="idFieldName">idFieldName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="docId">docId: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="obj">obj: <span class="extype" name="scala.AnyRef">AnyRef</span></span>, <span name="dynamicFieldOverrides">dynamicFieldOverrides: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="org.apache.solr.common.SolrInputDocument">SolrInputDocument</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@autoMapToSolrInputDoc(idFieldName:String,docId:String,obj:Object,dynamicFieldOverrides:Map[String,String]):org.apache.solr.common.SolrInputDocument" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.SolrSupport#autoMapToSolrInputDoc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="autoMapToSolrInputDoc(docId:String,obj:Object,dynamicFieldOverrides:Map[String,String]):org.apache.solr.common.SolrInputDocument"></a>
+      <a id="autoMapToSolrInputDoc(String,AnyRef,Map[String,String]):SolrInputDocument"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">autoMapToSolrInputDoc</span><span class="params">(<span name="docId">docId: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="obj">obj: <span class="extype" name="scala.AnyRef">AnyRef</span></span>, <span name="dynamicFieldOverrides">dynamicFieldOverrides: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="org.apache.solr.common.SolrInputDocument">SolrInputDocument</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@autoMapToSolrInputDoc(docId:String,obj:Object,dynamicFieldOverrides:Map[String,String]):org.apache.solr.common.SolrInputDocument" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Uses reflection to map bean public fields and getters to dynamic fields in Solr.</p>
+    </li><li name="com.lucidworks.spark.util.SolrSupport#buildShardList" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="buildShardList(zkHost:String,collection:String):List[com.lucidworks.spark.SolrShard]"></a>
+      <a id="buildShardList(String,String):List[SolrShard]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">buildShardList</span><span class="params">(<span name="zkHost">zkHost: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="collection">collection: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="../SolrShard.html" class="extype" name="com.lucidworks.spark.SolrShard">SolrShard</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@buildShardList(zkHost:String,collection:String):List[com.lucidworks.spark.SolrShard]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.lucidworks.spark.util.SolrSupport#filterDocuments" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="filterDocuments(filterContext:com.lucidworks.spark.filter.DocFilterContext,zkHost:String,collection:String,docs:org.apache.spark.streaming.dstream.DStream[org.apache.solr.common.SolrInputDocument]):org.apache.spark.streaming.dstream.DStream[org.apache.solr.common.SolrInputDocument]"></a>
+      <a id="filterDocuments(DocFilterContext,String,String,DStream[SolrInputDocument]):DStream[SolrInputDocument]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">filterDocuments</span><span class="params">(<span name="filterContext">filterContext: <a href="../filter/DocFilterContext.html" class="extype" name="com.lucidworks.spark.filter.DocFilterContext">DocFilterContext</a></span>, <span name="zkHost">zkHost: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="collection">collection: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="docs">docs: <span class="extype" name="org.apache.spark.streaming.dstream.DStream">DStream</span>[<span class="extype" name="org.apache.solr.common.SolrInputDocument">SolrInputDocument</span>]</span>)</span><span class="result">: <span class="extype" name="org.apache.spark.streaming.dstream.DStream">DStream</span>[<span class="extype" name="org.apache.solr.common.SolrInputDocument">SolrInputDocument</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@filterDocuments(filterContext:com.lucidworks.spark.filter.DocFilterContext,zkHost:String,collection:String,docs:org.apache.spark.streaming.dstream.DStream[org.apache.solr.common.SolrInputDocument]):org.apache.spark.streaming.dstream.DStream[org.apache.solr.common.SolrInputDocument]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="com.lucidworks.spark.util.SolrSupport#getCachedCloudClient" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getCachedCloudClient(zkHost:String):org.apache.solr.client.solrj.impl.CloudSolrClient"></a>
+      <a id="getCachedCloudClient(String):CloudSolrClient"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCachedCloudClient</span><span class="params">(<span name="zkHost">zkHost: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.apache.solr.client.solrj.impl.CloudSolrClient">CloudSolrClient</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@getCachedCloudClient(zkHost:String):org.apache.solr.client.solrj.impl.CloudSolrClient" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.lucidworks.spark.util.SolrSupport#getDefaultDynamicFieldMapping" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getDefaultDynamicFieldMapping(clazz:Class[_]):Option[String]"></a>
+      <a id="getDefaultDynamicFieldMapping(Class[_]):Option[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getDefaultDynamicFieldMapping</span><span class="params">(<span name="clazz">clazz: <span class="extype" name="scala.Predef.Class">Class</span>[_]</span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@getDefaultDynamicFieldMapping(clazz:Class[_]):Option[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.SolrSupport#getHttpSolrClient" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getHttpSolrClient(shardUrl:String):org.apache.solr.client.solrj.impl.HttpSolrClient"></a>
+      <a id="getHttpSolrClient(String):HttpSolrClient"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getHttpSolrClient</span><span class="params">(<span name="shardUrl">shardUrl: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.apache.solr.client.solrj.impl.HttpSolrClient">HttpSolrClient</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@getHttpSolrClient(shardUrl:String):org.apache.solr.client.solrj.impl.HttpSolrClient" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.SolrSupport#getNewSolrCloudClient" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getNewSolrCloudClient(zkHost:String):org.apache.solr.client.solrj.impl.CloudSolrClient"></a>
+      <a id="getNewSolrCloudClient(String):CloudSolrClient"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getNewSolrCloudClient</span><span class="params">(<span name="zkHost">zkHost: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.apache.solr.client.solrj.impl.CloudSolrClient">CloudSolrClient</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@getNewSolrCloudClient(zkHost:String):org.apache.solr.client.solrj.impl.CloudSolrClient" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.SolrSupport#getSolrBaseUrl" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getSolrBaseUrl(zkHost:String):String"></a>
+      <a id="getSolrBaseUrl(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getSolrBaseUrl</span><span class="params">(<span name="zkHost">zkHost: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@getSolrBaseUrl(zkHost:String):String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.SolrSupport#getSplits" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getSplits(fd:org.apache.spark.sql.types.DataType,sF:String,sPS:Int,query:org.apache.solr.client.solrj.SolrQuery,shard:com.lucidworks.spark.SolrShard):List[com.lucidworks.spark.query.ShardSplit[_]]"></a>
+      <a id="getSplits(DataType,String,Int,SolrQuery,SolrShard):List[ShardSplit[_]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getSplits</span><span class="params">(<span name="fd">fd: <span class="extype" name="org.apache.spark.sql.types.DataType">DataType</span></span>, <span name="sF">sF: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="sPS">sPS: <span class="extype" name="scala.Int">Int</span></span>, <span name="query">query: <span class="extype" name="org.apache.solr.client.solrj.SolrQuery">SolrQuery</span></span>, <span name="shard">shard: <a href="../SolrShard.html" class="extype" name="com.lucidworks.spark.SolrShard">SolrShard</a></span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="../query/ShardSplit.html" class="extype" name="com.lucidworks.spark.query.ShardSplit">ShardSplit</a>[_]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@getSplits(fd:org.apache.spark.sql.types.DataType,sF:String,sPS:Int,query:org.apache.solr.client.solrj.SolrQuery,shard:com.lucidworks.spark.SolrShard):List[com.lucidworks.spark.query.ShardSplit[_]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.lucidworks.spark.util.SolrSupport#indexDStreamOfDocs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="indexDStreamOfDocs(zkHost:String,collection:String,batchSize:Int,docs:org.apache.spark.streaming.dstream.DStream[org.apache.solr.common.SolrInputDocument]):Unit"></a>
+      <a id="indexDStreamOfDocs(String,String,Int,DStream[SolrInputDocument]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">indexDStreamOfDocs</span><span class="params">(<span name="zkHost">zkHost: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="collection">collection: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="batchSize">batchSize: <span class="extype" name="scala.Int">Int</span></span>, <span name="docs">docs: <span class="extype" name="org.apache.spark.streaming.dstream.DStream">DStream</span>[<span class="extype" name="org.apache.solr.common.SolrInputDocument">SolrInputDocument</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@indexDStreamOfDocs(zkHost:String,collection:String,batchSize:Int,docs:org.apache.spark.streaming.dstream.DStream[org.apache.solr.common.SolrInputDocument]):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.SolrSupport#indexDocs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="indexDocs(zkHost:String,collection:String,batchSize:Int,rdd:org.apache.spark.rdd.RDD[org.apache.solr.common.SolrInputDocument],commitWithin:Option[Int]):Unit"></a>
+      <a id="indexDocs(String,String,Int,RDD[SolrInputDocument],Option[Int]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">indexDocs</span><span class="params">(<span name="zkHost">zkHost: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="collection">collection: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="batchSize">batchSize: <span class="extype" name="scala.Int">Int</span></span>, <span name="rdd">rdd: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="org.apache.solr.common.SolrInputDocument">SolrInputDocument</span>]</span>, <span name="commitWithin">commitWithin: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@indexDocs(zkHost:String,collection:String,batchSize:Int,rdd:org.apache.spark.rdd.RDD[org.apache.solr.common.SolrInputDocument],commitWithin:Option[Int]):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.SolrSupport#indexDocs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="indexDocs(zkHost:String,collection:String,batchSize:Int,rdd:org.apache.spark.rdd.RDD[org.apache.solr.common.SolrInputDocument]):Unit"></a>
+      <a id="indexDocs(String,String,Int,RDD[SolrInputDocument]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">indexDocs</span><span class="params">(<span name="zkHost">zkHost: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="collection">collection: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="batchSize">batchSize: <span class="extype" name="scala.Int">Int</span></span>, <span name="rdd">rdd: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="org.apache.solr.common.SolrInputDocument">SolrInputDocument</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@indexDocs(zkHost:String,collection:String,batchSize:Int,rdd:org.apache.spark.rdd.RDD[org.apache.solr.common.SolrInputDocument]):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.typesafe.scalalogging.LazyLogging#logger" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="logger:com.typesafe.scalalogging.Logger"></a>
+      <a id="logger:Logger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">logger</span><span class="result">: <span class="extype" name="com.typesafe.scalalogging.Logger">Logger</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@logger:com.typesafe.scalalogging.Logger" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>LazyLogging</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.lucidworks.spark.util.SolrSupport#sendBatchToSolr" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="sendBatchToSolr(solrClient:org.apache.solr.client.solrj.SolrClient,collection:String,batch:Iterable[org.apache.solr.common.SolrInputDocument],commitWithin:Option[Int]):Unit"></a>
+      <a id="sendBatchToSolr(SolrClient,String,Iterable[SolrInputDocument],Option[Int]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sendBatchToSolr</span><span class="params">(<span name="solrClient">solrClient: <span class="extype" name="org.apache.solr.client.solrj.SolrClient">SolrClient</span></span>, <span name="collection">collection: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="batch">batch: <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="org.apache.solr.common.SolrInputDocument">SolrInputDocument</span>]</span>, <span name="commitWithin">commitWithin: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@sendBatchToSolr(solrClient:org.apache.solr.client.solrj.SolrClient,collection:String,batch:Iterable[org.apache.solr.common.SolrInputDocument],commitWithin:Option[Int]):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.SolrSupport#sendBatchToSolr" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="sendBatchToSolr(solrClient:org.apache.solr.client.solrj.SolrClient,collection:String,batch:Iterable[org.apache.solr.common.SolrInputDocument]):Unit"></a>
+      <a id="sendBatchToSolr(SolrClient,String,Iterable[SolrInputDocument]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sendBatchToSolr</span><span class="params">(<span name="solrClient">solrClient: <span class="extype" name="org.apache.solr.client.solrj.SolrClient">SolrClient</span></span>, <span name="collection">collection: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="batch">batch: <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="org.apache.solr.common.SolrInputDocument">SolrInputDocument</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@sendBatchToSolr(solrClient:org.apache.solr.client.solrj.SolrClient,collection:String,batch:Iterable[org.apache.solr.common.SolrInputDocument]):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.SolrSupport#sendDStreamOfDocsToFusion" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="sendDStreamOfDocsToFusion(fusionUrl:String,fusionCredentials:String,docs:org.apache.spark.streaming.dstream.DStream[_],batchSize:Int):Unit"></a>
+      <a id="sendDStreamOfDocsToFusion(String,String,DStream[_],Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sendDStreamOfDocsToFusion</span><span class="params">(<span name="fusionUrl">fusionUrl: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fusionCredentials">fusionCredentials: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="docs">docs: <span class="extype" name="org.apache.spark.streaming.dstream.DStream">DStream</span>[_]</span>, <span name="batchSize">batchSize: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@sendDStreamOfDocsToFusion(fusionUrl:String,fusionCredentials:String,docs:org.apache.spark.streaming.dstream.DStream[_],batchSize:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.SolrSupport#setupKerberosIfNeeded" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="setupKerberosIfNeeded():Unit"></a>
+      <a id="setupKerberosIfNeeded():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setupKerberosIfNeeded</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@setupKerberosIfNeeded():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.SolrSupport#shouldRetry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="shouldRetry(exc:Exception):Boolean"></a>
+      <a id="shouldRetry(Exception):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">shouldRetry</span><span class="params">(<span name="exc">exc: <span class="extype" name="scala.Exception">Exception</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@shouldRetry(exc:Exception):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.SolrSupport#splitShards" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="splitShards(query:org.apache.solr.client.solrj.SolrQuery,solrShard:com.lucidworks.spark.SolrShard,splitFieldName:String,splitsPerShard:Int):List[com.lucidworks.spark.query.ShardSplit[_]]"></a>
+      <a id="splitShards(SolrQuery,SolrShard,String,Int):List[ShardSplit[_]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">splitShards</span><span class="params">(<span name="query">query: <span class="extype" name="org.apache.solr.client.solrj.SolrQuery">SolrQuery</span></span>, <span name="solrShard">solrShard: <a href="../SolrShard.html" class="extype" name="com.lucidworks.spark.SolrShard">SolrShard</a></span>, <span name="splitFieldName">splitFieldName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="splitsPerShard">splitsPerShard: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="../query/ShardSplit.html" class="extype" name="com.lucidworks.spark.query.ShardSplit">ShardSplit</a>[_]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@splitShards(query:org.apache.solr.client.solrj.SolrQuery,solrShard:com.lucidworks.spark.SolrShard,splitFieldName:String,splitsPerShard:Int):List[com.lucidworks.spark.query.ShardSplit[_]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@toString():String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.SolrSupport$@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="com.typesafe.scalalogging.LazyLogging">
+              <h3>Inherited from <span class="extype" name="com.typesafe.scalalogging.LazyLogging">LazyLogging</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

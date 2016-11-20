@@ -1,0 +1,359 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>query - spark-solr 3.0.1-SNAPSHOT API - com.lucidworks.spark.query</title>
+          <meta name="description" content="query - spark - solr 3.0.1 - SNAPSHOT API - com.lucidworks.spark.query" />
+          <meta name="keywords" content="query spark solr 3.0.1 SNAPSHOT API com.lucidworks.spark.query" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'com.lucidworks.spark.query.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.lucidworks">lucidworks</a>.<a href="../package.html" class="extype" name="com.lucidworks.spark">spark</a></p>
+        <h1>query</h1><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.query.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">query</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.lucidworks.spark.query.AbstractFieldShardSplitStrategy" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AbstractFieldShardSplitStrategy[T]extendsShardSplitStrategywithSerializable"></a>
+      <a id="AbstractFieldShardSplitStrategy[T]:AbstractFieldShardSplitStrategy[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AbstractFieldShardSplitStrategy.html"><span class="name">AbstractFieldShardSplitStrategy</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="ShardSplitStrategy.html" class="extype" name="com.lucidworks.spark.query.ShardSplitStrategy">ShardSplitStrategy</a> with <span class="extype" name="java.io.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.query.package@AbstractFieldShardSplitStrategy[T]extendsShardSplitStrategywithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.query.AbstractShardSplit" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AbstractShardSplit[T]extendsShardSplit[T]withSerializable"></a>
+      <a id="AbstractShardSplit[T]:AbstractShardSplit[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AbstractShardSplit.html"><span class="name">AbstractShardSplit</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="ShardSplit.html" class="extype" name="com.lucidworks.spark.query.ShardSplit">ShardSplit</a>[<span class="extype" name="com.lucidworks.spark.query.AbstractShardSplit.T">T</span>] with <span class="extype" name="java.io.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.query.package@AbstractShardSplit[T]extendsShardSplit[T]withSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.query.NumberFieldShardSplitStrategy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NumberFieldShardSplitStrategyextendsAbstractFieldShardSplitStrategy[Long]withSerializable"></a>
+      <a id="NumberFieldShardSplitStrategy:NumberFieldShardSplitStrategy"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="NumberFieldShardSplitStrategy.html"><span class="name">NumberFieldShardSplitStrategy</span></a><span class="result"> extends <a href="AbstractFieldShardSplitStrategy.html" class="extype" name="com.lucidworks.spark.query.AbstractFieldShardSplitStrategy">AbstractFieldShardSplitStrategy</a>[<span class="extype" name="java.lang.Long">Long</span>] with <span class="extype" name="java.io.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.query.package@NumberFieldShardSplitStrategyextendsAbstractFieldShardSplitStrategy[Long]withSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.query.PagedResultsIterator" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PagedResultsIterator[T]extendsIterator[T]withIterable[T]"></a>
+      <a id="PagedResultsIterator[T]:PagedResultsIterator[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PagedResultsIterator.html"><span class="name">PagedResultsIterator</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="java.util.Iterator">Iterator</span>[<span class="extype" name="com.lucidworks.spark.query.PagedResultsIterator.T">T</span>] with <span class="extype" name="java.lang.Iterable">Iterable</span>[<span class="extype" name="com.lucidworks.spark.query.PagedResultsIterator.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.query.package@PagedResultsIterator[T]extendsIterator[T]withIterable[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.query.ResultsIterator" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ResultsIteratorextendsIterator[org.apache.solr.common.SolrDocument]withIterable[org.apache.solr.common.SolrDocument]"></a>
+      <a id="ResultsIterator:ResultsIterator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ResultsIterator.html"><span class="name">ResultsIterator</span></a><span class="result"> extends <span class="extype" name="java.util.Iterator">Iterator</span>[<span class="extype" name="org.apache.solr.common.SolrDocument">SolrDocument</span>] with <span class="extype" name="java.lang.Iterable">Iterable</span>[<span class="extype" name="org.apache.solr.common.SolrDocument">SolrDocument</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.query.package@ResultsIteratorextendsIterator[org.apache.solr.common.SolrDocument]withIterable[org.apache.solr.common.SolrDocument]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.query.ShardSplit" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ShardSplit[T]extendsSerializable"></a>
+      <a id="ShardSplit[T]:ShardSplit[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ShardSplit.html"><span class="name">ShardSplit</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="java.io.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.query.package@ShardSplit[T]extendsSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.query.ShardSplitStrategy" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ShardSplitStrategyextendsObject"></a>
+      <a id="ShardSplitStrategy:ShardSplitStrategy"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ShardSplitStrategy.html"><span class="name">ShardSplitStrategy</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.query.package@ShardSplitStrategyextendsObject" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.query.SolrStreamIterator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SolrStreamIteratorextendsTupleStreamIterator"></a>
+      <a id="SolrStreamIterator:SolrStreamIterator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SolrStreamIterator.html"><span class="name">SolrStreamIterator</span></a><span class="result"> extends <a href="TupleStreamIterator.html" class="extype" name="com.lucidworks.spark.query.TupleStreamIterator">TupleStreamIterator</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.query.package@SolrStreamIteratorextendsTupleStreamIterator" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.query.SolrTermVector" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SolrTermVectorextendsSparseVectorwithVectorwithSerializable"></a>
+      <a id="SolrTermVector:SolrTermVector"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SolrTermVector.html"><span class="name">SolrTermVector</span></a><span class="result"> extends <span class="extype" name="org.apache.spark.mllib.linalg.SparseVector">SparseVector</span> with <span class="extype" name="org.apache.spark.mllib.linalg.Vector">Vector</span> with <span class="extype" name="java.io.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.query.package@SolrTermVectorextendsSparseVectorwithVectorwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.query.StreamingExpressionResultIterator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StreamingExpressionResultIteratorextendsTupleStreamIterator"></a>
+      <a id="StreamingExpressionResultIterator:StreamingExpressionResultIterator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="StreamingExpressionResultIterator.html"><span class="name">StreamingExpressionResultIterator</span></a><span class="result"> extends <a href="TupleStreamIterator.html" class="extype" name="com.lucidworks.spark.query.TupleStreamIterator">TupleStreamIterator</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.query.package@StreamingExpressionResultIteratorextendsTupleStreamIterator" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.query.StreamingResultsIterator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StreamingResultsIteratorextendsResultsIterator"></a>
+      <a id="StreamingResultsIterator:StreamingResultsIterator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="StreamingResultsIterator.html"><span class="name">StreamingResultsIterator</span></a><span class="result"> extends <a href="ResultsIterator.html" class="extype" name="com.lucidworks.spark.query.ResultsIterator">ResultsIterator</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.query.package@StreamingResultsIteratorextendsResultsIterator" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.query.StringFieldShardSplitStrategy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StringFieldShardSplitStrategyextendsAbstractFieldShardSplitStrategy[String]withSerializable"></a>
+      <a id="StringFieldShardSplitStrategy:StringFieldShardSplitStrategy"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="StringFieldShardSplitStrategy.html"><span class="name">StringFieldShardSplitStrategy</span></a><span class="result"> extends <a href="AbstractFieldShardSplitStrategy.html" class="extype" name="com.lucidworks.spark.query.AbstractFieldShardSplitStrategy">AbstractFieldShardSplitStrategy</a>[<span class="extype" name="java.lang.String">String</span>] with <span class="extype" name="java.io.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.query.package@StringFieldShardSplitStrategyextendsAbstractFieldShardSplitStrategy[String]withSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.query.TermVectorIterator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TermVectorIteratorextendsPagedResultsIterator[org.apache.spark.mllib.linalg.Vector]"></a>
+      <a id="TermVectorIterator:TermVectorIterator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TermVectorIterator.html"><span class="name">TermVectorIterator</span></a><span class="result"> extends <a href="PagedResultsIterator.html" class="extype" name="com.lucidworks.spark.query.PagedResultsIterator">PagedResultsIterator</a>[<span class="extype" name="org.apache.spark.mllib.linalg.Vector">Vector</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.query.package@TermVectorIteratorextendsPagedResultsIterator[org.apache.spark.mllib.linalg.Vector]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.query.TupleStreamIterator" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TupleStreamIteratorextendsResultsIterator"></a>
+      <a id="TupleStreamIterator:TupleStreamIterator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TupleStreamIterator.html"><span class="name">TupleStreamIterator</span></a><span class="result"> extends <a href="ResultsIterator.html" class="extype" name="com.lucidworks.spark.query.ResultsIterator">ResultsIterator</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.query.package@TupleStreamIteratorextendsResultsIterator" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.lucidworks.spark.query.sql" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="sql"></a>
+      <a id="sql:sql"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="sql/package.html"><span class="name">sql</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.query.package@sql" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

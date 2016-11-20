@@ -1,0 +1,292 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>ml - spark-solr 3.0.1-SNAPSHOT API - com.lucidworks.spark.example.ml</title>
+          <meta name="description" content="ml - spark - solr 3.0.1 - SNAPSHOT API - com.lucidworks.spark.example.ml" />
+          <meta name="keywords" content="ml spark solr 3.0.1 SNAPSHOT API com.lucidworks.spark.example.ml" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'com.lucidworks.spark.example.ml.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.lucidworks">lucidworks</a>.<a href="../../package.html" class="extype" name="com.lucidworks.spark">spark</a>.<a href="../package.html" class="extype" name="com.lucidworks.spark.example">example</a></p>
+        <h1>ml</h1><span class="permalink">
+      <a href="../../../../../index.html#com.lucidworks.spark.example.ml.package" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ml</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.lucidworks.spark.example.ml.MLPipeline" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MLPipelineextendsSparkApp.RDDProcessor"></a>
+      <a id="MLPipeline:MLPipeline"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MLPipeline.html"><span class="name">MLPipeline</span></a><span class="result"> extends <span class="extype" name="com.lucidworks.spark.SparkApp.RDDProcessor">RDDProcessor</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.lucidworks.spark.example.ml.package@MLPipelineextendsSparkApp.RDDProcessor" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.example.ml.MLPipelineScala" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MLPipelineScalaextendsSparkApp.RDDProcessor"></a>
+      <a id="MLPipelineScala:MLPipelineScala"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MLPipelineScala.html"><span class="name">MLPipelineScala</span></a><span class="result"> extends <span class="extype" name="com.lucidworks.spark.SparkApp.RDDProcessor">RDDProcessor</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.lucidworks.spark.example.ml.package@MLPipelineScalaextendsSparkApp.RDDProcessor" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An example of building a spark.ml classification model to predict the newsgroup of
+articles from the 20 newsgroups data (see <a href="http://qwone.com/~jason/20Newsgroups/" target="_blank">http://qwone.com/~jason/20Newsgroups/</a>)
+hosted in a Solr collection.</p><div class="fullcomment"><div class="comment cmt"><p>An example of building a spark.ml classification model to predict the newsgroup of
+articles from the 20 newsgroups data (see <a href="http://qwone.com/~jason/20Newsgroups/" target="_blank">http://qwone.com/~jason/20Newsgroups/</a>)
+hosted in a Solr collection.</p><h4> Prerequisites </h4><p>You must run <code>mvn -DskipTests package</code> in the spark-solr project, and you must download
+a Spark 1.6.1 binary distribution and point the environment variable <code>$SPARK_HOME</code>
+to the unpacked distribution directory.</p><p>Follow the instructions in the <a href="NewsgroupsIndexer.html" class="extype" name="com.lucidworks.spark.example.ml.NewsgroupsIndexer">NewsgroupsIndexer</a> example's scaladoc to populate a Solr
+collection with articles from the above-linked 20 newsgroup data.</p><h4> Example invocation </h4><pre>$SPARK_HOME/bin/spark-submit --master 'local[<span class="num">2</span>]' --<span class="kw">class</span> com.lucidworks.spark.SparkApp \
+target/spark-solr-<span class="num">2.0</span>.<span class="num">0</span>-SNAPSHOT-shaded.jar ml-pipeline-scala</pre><p>To see a description of all available options, run the following:</p><pre>$SPARK_HOME/bin/spark-submit --<span class="kw">class</span> com.lucidworks.spark.SparkApp \
+target/spark-solr-<span class="num">2.0</span>.<span class="num">0</span>-SNAPSHOT-shaded.jar ml-pipeline-scala --help</pre></div></div>
+    </li><li name="com.lucidworks.spark.example.ml.NewsgroupsIndexer" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NewsgroupsIndexerextendsSparkApp.RDDProcessorwithLazyLogging"></a>
+      <a id="NewsgroupsIndexer:NewsgroupsIndexer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="NewsgroupsIndexer.html"><span class="name">NewsgroupsIndexer</span></a><span class="result"> extends <span class="extype" name="com.lucidworks.spark.SparkApp.RDDProcessor">RDDProcessor</span> with <span class="extype" name="com.typesafe.scalalogging.LazyLogging">LazyLogging</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.lucidworks.spark.example.ml.package@NewsgroupsIndexerextendsSparkApp.RDDProcessorwithLazyLogging" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Example application to index each article in the 20 newsgroups data as a Solr document.</p><div class="fullcomment"><div class="comment cmt"><p>Example application to index each article in the 20 newsgroups data as a Solr document.
+The 20 newsgroups data is downloadable from <a href="http://qwone.com/~jason/20Newsgroups/" target="_blank">http://qwone.com/~jason/20Newsgroups/</a>.</p><p>Articles in any of the three archives available there can be indexed,
+after first downloading it from the above page and unpacking it.</p><p>The path you supply as an argument to the <code>--path</code> cmdline option (see the
+&quot;Example invocation&quot; section below) should be the directory containing the newsgroup
+folders.  All files found recursively under this path will be indexed to Solr.</p><h4> Prerequisites </h4><p>Start Solr in cloud mode, and create a target collection, e.g. (after downloading the
+binary Solr distribution - see <a href="https://lucene.apache.org/solr/" target="_blank">https://lucene.apache.org/solr/</a> - then unpacking and
+changing to the unpacked root directory, e.g. <code>solr-5.4.1/</code>):</p><pre>bin/solr -c &amp;&amp; bin/solr create -c testing -shards <span class="num">2</span></pre><h4> Document fields </h4><p>Each header present in the newsgroup articles will be indexed to a Solr dynamic field
+name prefixed with the header name, e.g. Subject: text will be indexed into a field
+named Subject_txt_en<code>.</code></p><p>Note that the set of headers in each of the three available archives is different; details
+are on the download page above.</p><p>The body of each article will be indexed into the <code>content_txt_en</code> field.</p><p>The <code>newsgroup_s</code> field will contain the name of the article's parent directory.</p><p>The <code>id</code> field value will be in the format <code>newsgroup_articlenum</code>, e.g. &quot;comp.graphics_38659&quot;,
+where <code>newsgroup</code> is the name of the article's parent directory, and <code>articlenum</code> is the
+article filename.</p><p>The <code>filepath_s</code> field will contain the full path of the article source file.</p><p>If you downloaded the <code>20news-19997.tar.gz</code> archive, the only one with the Date: header,
+dates will be indexed into two fields: the <code>Date_s</code> field will contain the original Date:
+text, and the <code>Date_tdt</code> field will contain the date reformatted in ISO-8601 format.</p><h4> Example invocation </h4><p>You must first run <code>mvn -DskipTests package</code> in the spark-solr project, and you must download
+a Spark 1.6.1 binary distribution and point the environment variable <code>$SPARK_HOME</code>
+to the unpacked distribution directory.</p><pre>$SPARK_HOME/bin/spark-submit --master 'local[<span class="num">2</span>]' --<span class="kw">class</span> com.lucidworks.spark.SparkApp \
+target/spark-solr-<span class="num">2.0</span>.<span class="num">0</span>-SNAPSHOT-shaded.jar newsgroups2solr -zkHost localhost:<span class="num">9983</span>     \
+-collection ml20news -path /relative/or/absolute/path/to/<span class="num">20</span>news-<span class="num">18828</span>`</pre><p>To see a description of all available options, run the following:</p><pre>$SPARK_HOME/bin/spark-submit --<span class="kw">class</span> com.lucidworks.spark.SparkApp \
+target/spark-solr-<span class="num">2.0</span>.<span class="num">0</span>-SNAPSHOT-shaded.jar newsgroups2solr --help</pre></div></div>
+    </li><li name="com.lucidworks.spark.example.ml.SVMExample" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SVMExampleextendsSparkApp.RDDProcessor"></a>
+      <a id="SVMExample:SVMExample"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SVMExample.html"><span class="name">SVMExample</span></a><span class="result"> extends <span class="extype" name="com.lucidworks.spark.SparkApp.RDDProcessor">RDDProcessor</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.lucidworks.spark.example.ml.package@SVMExampleextendsSparkApp.RDDProcessor" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.example.ml.UseML" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UseMLextendsSparkApp.RDDProcessor"></a>
+      <a id="UseML:UseML"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="UseML.html"><span class="name">UseML</span></a><span class="result"> extends <span class="extype" name="com.lucidworks.spark.SparkApp.RDDProcessor">RDDProcessor</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.lucidworks.spark.example.ml.package@UseMLextendsSparkApp.RDDProcessor" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.lucidworks.spark.example.ml.DateConverter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DateConverter"></a>
+      <a id="DateConverter:DateConverter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DateConverter$.html"><span class="name">DateConverter</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span> with <span class="extype" name="com.typesafe.scalalogging.LazyLogging">LazyLogging</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.lucidworks.spark.example.ml.package@DateConverter" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Converts 3-letter time zone IDs to IDs that Joda-Time understands, parses dates using
+a set of date formats known to be present in the 20 newsgroups data, then converts them
+to ISO8601 format.</p>
+    </li><li name="com.lucidworks.spark.example.ml.MLPipelineScala" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MLPipelineScala"></a>
+      <a id="MLPipelineScala:MLPipelineScala"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MLPipelineScala$.html"><span class="name">MLPipelineScala</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.lucidworks.spark.example.ml.package@MLPipelineScala" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.example.ml.NewsgroupsIndexer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NewsgroupsIndexer"></a>
+      <a id="NewsgroupsIndexer:NewsgroupsIndexer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="NewsgroupsIndexer$.html"><span class="name">NewsgroupsIndexer</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.lucidworks.spark.example.ml.package@NewsgroupsIndexer" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.example.ml.SVMExample" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SVMExample"></a>
+      <a id="SVMExample:SVMExample"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SVMExample$.html"><span class="name">SVMExample</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.lucidworks.spark.example.ml.package@SVMExample" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A SVM example for text classification.</p><div class="fullcomment"><div class="comment cmt"><p>A SVM example for text classification. This class has the following feature transformations
+LuceneAnalyzer
+HashingTF
+Normalizer
+StandardScaler
+The SVM Model is trained after the above transformations and is tested for the given test data (using same transformations).
+</p></div></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>util - spark-solr 3.0.1-SNAPSHOT API - com.lucidworks.spark.util</title>
+          <meta name="description" content="util - spark - solr 3.0.1 - SNAPSHOT API - com.lucidworks.spark.util" />
+          <meta name="keywords" content="util spark solr 3.0.1 SNAPSHOT API com.lucidworks.spark.util" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'com.lucidworks.spark.util.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.lucidworks">lucidworks</a>.<a href="../package.html" class="extype" name="com.lucidworks.spark">spark</a></p>
+        <h1>util</h1><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">util</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.lucidworks.spark.util.EmbeddedSolrServerFactory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EmbeddedSolrServerFactoryextendsSerializable"></a>
+      <a id="EmbeddedSolrServerFactory:EmbeddedSolrServerFactory"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="EmbeddedSolrServerFactory.html"><span class="name">EmbeddedSolrServerFactory</span></a><span class="result"> extends <span class="extype" name="java.io.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.package@EmbeddedSolrServerFactoryextendsSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.PivotField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PivotFieldextendsProductwithSerializable"></a>
+      <a id="PivotField:PivotField"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PivotField.html"><span class="name">PivotField</span></a><span class="params">(<span name="solrField">solrField: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="prefix">prefix: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="otherSuffix">otherSuffix: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="maxCols">maxCols: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.package@PivotFieldextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.QueryResultsIterator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="QueryResultsIteratorextendsPagedResultsIterator[org.apache.solr.common.SolrDocument]"></a>
+      <a id="QueryResultsIterator:QueryResultsIterator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="QueryResultsIterator.html"><span class="name">QueryResultsIterator</span></a><span class="result"> extends <a href="../query/PagedResultsIterator.html" class="extype" name="com.lucidworks.spark.query.PagedResultsIterator">PagedResultsIterator</a>[<span class="extype" name="org.apache.solr.common.SolrDocument">SolrDocument</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.package@QueryResultsIteratorextendsPagedResultsIterator[org.apache.solr.common.SolrDocument]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.SQLQuerySupport" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SQLQuerySupportextendsObject"></a>
+      <a id="SQLQuerySupport:SQLQuerySupport"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SQLQuerySupport.html"><span class="name">SQLQuerySupport</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.package@SQLQuerySupportextendsObject" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.ScalaUtil" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ScalaUtilextendsSerializable"></a>
+      <a id="ScalaUtil:ScalaUtil"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ScalaUtil.html"><span class="name">ScalaUtil</span></a><span class="result"> extends <span class="extype" name="java.io.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.package@ScalaUtilextendsSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.SolrFieldMeta" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SolrFieldMetaextendsProductwithSerializable"></a>
+      <a id="SolrFieldMeta:SolrFieldMeta"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SolrFieldMeta.html"><span class="name">SolrFieldMeta</span></a><span class="params">(<span name="fieldType">fieldType: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="dynamicBase">dynamicBase: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="isRequired">isRequired: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Boolean">Boolean</span>]</span>, <span name="isMultiValued">isMultiValued: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Boolean">Boolean</span>]</span>, <span name="isDocValues">isDocValues: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Boolean">Boolean</span>]</span>, <span name="isStored">isStored: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Boolean">Boolean</span>]</span>, <span name="fieldTypeClass">fieldTypeClass: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.package@SolrFieldMetaextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.Utils" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UtilsextendsObject"></a>
+      <a id="Utils:Utils"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Utils.html"><span class="name">Utils</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.package@UtilsextendsObject" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.lucidworks.spark.util.CacheSolrClient" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CacheSolrClient"></a>
+      <a id="CacheSolrClient:CacheSolrClient"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="CacheSolrClient$.html"><span class="name">CacheSolrClient</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.package@CacheSolrClient" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.ConfigurationConstants" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConfigurationConstants"></a>
+      <a id="ConfigurationConstants:ConfigurationConstants"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ConfigurationConstants$.html"><span class="name">ConfigurationConstants</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.package@ConfigurationConstants" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.Constants" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Constants"></a>
+      <a id="Constants:Constants"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Constants$.html"><span class="name">Constants</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.package@Constants" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.JavaApiHelper" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JavaApiHelper"></a>
+      <a id="JavaApiHelper:JavaApiHelper"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="JavaApiHelper$.html"><span class="name">JavaApiHelper</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.package@JavaApiHelper" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.JsonUtil" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JsonUtil"></a>
+      <a id="JsonUtil:JsonUtil"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonUtil$.html"><span class="name">JsonUtil</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.package@JsonUtil" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.QueryConstants" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="QueryConstants"></a>
+      <a id="QueryConstants:QueryConstants"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="QueryConstants$.html"><span class="name">QueryConstants</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.package@QueryConstants" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.SolrJsonSupport" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SolrJsonSupport"></a>
+      <a id="SolrJsonSupport:SolrJsonSupport"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SolrJsonSupport$.html"><span class="name">SolrJsonSupport</span></a><span class="result"> extends <span class="extype" name="com.typesafe.scalalogging.LazyLogging">LazyLogging</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.package@SolrJsonSupport" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.SolrQuerySupport" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SolrQuerySupport"></a>
+      <a id="SolrQuerySupport:SolrQuerySupport"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SolrQuerySupport$.html"><span class="name">SolrQuerySupport</span></a><span class="result"> extends <span class="extype" name="com.typesafe.scalalogging.LazyLogging">LazyLogging</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.package@SolrQuerySupport" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.SolrRelationUtil" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SolrRelationUtil"></a>
+      <a id="SolrRelationUtil:SolrRelationUtil"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SolrRelationUtil$.html"><span class="name">SolrRelationUtil</span></a><span class="result"> extends <span class="extype" name="com.typesafe.scalalogging.LazyLogging">LazyLogging</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.package@SolrRelationUtil" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.lucidworks.spark.util.SolrSupport" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SolrSupport"></a>
+      <a id="SolrSupport:SolrSupport"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SolrSupport$.html"><span class="name">SolrSupport</span></a><span class="result"> extends <span class="extype" name="com.typesafe.scalalogging.LazyLogging">LazyLogging</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.lucidworks.spark.util.package@SolrSupport" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">TODO: Use Solr schema API to index field names
+</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
