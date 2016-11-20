@@ -5,9 +5,9 @@
 :toc-title:
 
 === Support
-Solr 6.2.1
-Spark 2.0.2
-Scala 2.11.8
+Solr 6.2.1<br/>
+Spark 2.0.2<br/>
+Scala 2.11.8<br/>
 
 This project includes tools for reading data from Solr as a Spark RDD and indexing objects from Spark into Solr using SolrJ.
 
